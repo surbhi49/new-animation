@@ -1,0 +1,90 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+.main{ width:100%;
+   height:100vh;
+      position:relative;
+      background-image:url(../img/desert.png);
+      background-position:center;
+      background-size:cover;
+      overflow:hidden;
+
+      }       
+   .ocean {      height:300px;
+                  width:100%;
+                  position:absolute;
+                  animation:water 10s linear infinite;
+
+                  
+      } 
+           
+
+      .ocean img{ height:300px;
+                  width:100%;
+
+      }
+      .camel{ position: absolute;
+               top:60%;
+               right:8%;
+               }
+         .camel img{ width:200px;
+                    animation: move 40s linear infinite; }
+           @keyframes move{0% { transform: translateX(-50px) rotate(5deg);
+
+        }
+                         25%{ transform: translateX(-250px); }
+
+                       50% {transform: translateX(-500px); }
+
+                        75% {  transform:translateX(-750px); } 
+                   
+
+                            100% { transform: translateX(-1000px); }
+                        
+                        }
+
+   .ship{ 
+
+       position:absolute;
+       background:transparent;
+       left:10%;
+       bottom:-20%;
+       transform: translateX(-50px);
+       }
+      .ship img{width:180px;
+                  height:11em;
+                  animation: boat 10s linear infinite;
+                 }
+       @keyframes boat{ 0% { transform: translateX(50px)
+
+        }
+                         25%{ transform: translateX(250px); }
+
+                       50% {transform: translateX(500px); }
+
+                        75% {  transform:translateX(750px); } 
+                   
+
+                            100% { transform: translateX(1000px); }
+                        
+                        }
+    .bird{ 
+            background:transparent;
+           transform: translateX(-50px);
+
+                         }
+           .bird img{ position:absolute;
+                      top: 100%;
+                      left:10%;
+                      width:60px;  }
+           .bird2{ 
+            background:transparent;
+           transform: translateX(-50px);
+
+                         }
+           .bird2 img{ position:absolute;
+                      top:50%;
+                      left:40%;
+                      width:60px;  }
